@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Hector Hilde",
+    "role": "Founder",
+    "info": "Our faith is the substance of our future. There is no big success without big sacrifice.",
+    "socials": "https://www.instagram.com/mahendrasetya99/",
+    "avatar": "AVATARZ 1.png"
+  },
+  {
+    "id": 2,
+    "name": "Bran Xanthos",
+    "role": "Co-Founder",
+    "info": "Our faith is the substance of our future. There is no big success without big sacrifice.",
+    "socials": "https://www.instagram.com/mahendrasetya99/",
+    "avatar": "AVATARZ 3.png"
+  },
+  {
+    "id": 3,
+    "name": "Norbaer Ingimárr",
+    "role": "Co-Founder",
+    "info": "Our faith is the substance of our future. There is no big success without big sacrifice.",
+    "socials": "https://www.instagram.com/mahendrasetya99/",
+    "avatar": "AVATARZ 4.png"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "Motorbike",
+    "img": "motor.jpg",
+    "info": "Sepeda motor adalah kendaraan beroda dua yang digerakkan oleh sebuah mesin. Letak kedua roda sebaris lurus dan pada kecepatan tinggi sepeda motor tetap stabil disebabkan oleh gaya giroskopik. Sedangkan pada kecepatan rendah, kestabilan tergantung pada skill pengendara",
+    "spesification": [
+      "<strong>Sistem Suplai Bahan Bakar</strong>: Injeksi (PGM-FI)",
+      "<strong>Tipe Mesin</strong>: 4 - Langkah, SOHC, eSP",
+      "<strong>Tipe Tranmisi</strong>: Otomatis, V-Matic",
+      "<strong>Daya Maksimum</strong>: 6.6 kW (9.0 PS)/7.500 rpm"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Mobil",
+    "img": "car.jpg",
+    "info": "Mobil adalah kendaraan yang menggunakan bahan bakar minyak untuk menghidupkan mesinnya. Mobil kependekan dari otomobil yang berasal dari [bahasa Yunani] 'autos' dan Latin 'movére'.",
+    "spesification": [
+      "Tipe Mesin: 6 - Langkah, SOHC, eSP",
+      "Sistem Suplai Bahan Bakar: Injeksi (PGM-FI)"
+    ]
+  }
+]
