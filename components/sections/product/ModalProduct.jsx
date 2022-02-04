@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Box,
   Button,
   useDisclosure,
   Modal,
@@ -44,10 +45,10 @@ const ModalProduct = ({ spesification }) => {
           <ModalBody my={6}>
             {spesification.map((data) => (
               // <ListItem key={data}>{data}</ListItem>
-              <>
-                <Text key={data} dangerouslySetInnerHTML={{ __html: data }} />
+              <Box key={data}>
+                <Text dangerouslySetInnerHTML={{ __html: data }} />
                 <Divider my={4} />
-              </>
+              </Box>
             ))}
           </ModalBody>
 
