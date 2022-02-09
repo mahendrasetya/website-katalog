@@ -2,7 +2,9 @@ import * as React from "react";
 import {
   Box,
   Container,
+  Stack,
   HStack,
+  Image,
   Button,
   Icon,
   IconButton,
@@ -17,7 +19,7 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 import navMenu from "../../config/menu";
-import { AiFillHome } from "react-icons/ai";
+import logo from "@/content/hero.json";
 
 const NAVBAR_MENU: [string, string][] = [
   ["About", navMenu.menu.about],
@@ -28,6 +30,8 @@ const NAVBAR_MENU: [string, string][] = [
 ];
 
 export const NavbarMobile: React.FC = () => {
+  const basePath = "/img";
+
   return (
     <>
       <Box w="full" position="fixed" zIndex={100} bgColor="gray.50">
@@ -36,21 +40,18 @@ export const NavbarMobile: React.FC = () => {
           maxW="container.lg"
           maxH="100%"
           h="64px"
-          py={2}
+          py={3}
           px={[6, 0]}
         >
           <HStack>
             <Box>
               <NextLink href="/" passHref>
-                <Button
-                  leftIcon={<AiFillHome />}
-                  as="a"
-                  variant="ghost"
-                  size="lg"
-                  px={2}
-                >
-                  Home
-                </Button>
+                <Image
+                  src={`${basePath}/${logo.logo}`}
+                  alt="logo"
+                  mt={2}
+                  _hover={{ cursor: "pointer" }}
+                />
               </NextLink>
             </Box>
 

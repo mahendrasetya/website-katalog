@@ -5,12 +5,14 @@ import {
   Container,
   Divider,
   HStack,
+  Image,
   Link,
   Spacer,
+  Stack,
 } from "@chakra-ui/react";
-import { AiFillHome } from "react-icons/ai";
 import NextLink from "next/link";
 import navMenu from "../../config/menu";
+import logo from "@/content/hero.json";
 
 const NAVBAR_MENU: [string, string][] = [
   ["About", navMenu.menu.about],
@@ -21,6 +23,8 @@ const NAVBAR_MENU: [string, string][] = [
 ];
 
 export const NavbarDesktop: React.FC = () => {
+  const basePath = "/img";
+
   return (
     <>
       <Box w="full" position="fixed" zIndex={100} bgColor="gray.50">
@@ -35,15 +39,11 @@ export const NavbarDesktop: React.FC = () => {
           <HStack>
             <Box>
               <NextLink href="/" passHref>
-                <Button
-                  leftIcon={<AiFillHome />}
-                  as="a"
-                  variant="ghost"
-                  px={2}
-                  size="lg"
-                >
-                  Home
-                </Button>
+                <Image
+                  src={`${basePath}/${logo.logo}`}
+                  alt="logo"
+                  _hover={{ cursor: "pointer" }}
+                />
               </NextLink>
             </Box>
 
